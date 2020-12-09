@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "gKDWVSfWXHznZXhWxxzyXke5ksc1LAy8O44wgUiTsE/P5ZdgF4PrVlC8Sd+G6bUIaT2IMyr3gMAFpOXH4DeYMg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zolot\\source\\repos\\WpfApp1\\WpfApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zolot\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
+    "C:\\Users\\zolot\\.nuget\\packages\\mahapps.metro\\2.3.4\\mahapps.metro.2.3.4.nupkg.sha512",
+    "C:\\Users\\zolot\\.nuget\\packages\\mahapps.metro.iconpacks\\4.8.0\\mahapps.metro.iconpacks.4.8.0.nupkg.sha512",
+    "C:\\Users\\zolot\\.nuget\\packages\\mahapps.metro.iconpacks.fontawesome\\4.8.0\\mahapps.metro.iconpacks.fontawesome.4.8.0.nupkg.sha512",
+    "C:\\Users\\zolot\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\zolot\\.nuget\\packages\\videolan.libvlc.windows\\3.0.11\\videolan.libvlc.windows.3.0.11.nupkg.sha512",
+    "C:\\Users\\zolot\\.nuget\\packages\\vlc.dotnet.core\\3.1.0\\vlc.dotnet.core.3.1.0.nupkg.sha512",
+    "C:\\Users\\zolot\\.nuget\\packages\\vlc.dotnet.core.interops\\3.1.0\\vlc.dotnet.core.interops.3.1.0.nupkg.sha512",
+    "C:\\Users\\zolot\\.nuget\\packages\\vlc.dotnet.wpf\\3.1.0\\vlc.dotnet.wpf.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

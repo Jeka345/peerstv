@@ -1,0 +1,419 @@
+﻿<mah:MetroWindow x:Name="main" x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks" xmlns:windowsForms1="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:MpvPlayer="clr-namespace:EmergenceGuardian.MpvPlayerUI;assembly=MpvPlayerUI" xmlns:vlc="clr-namespace:Vlc.DotNet.Wpf;assembly=Vlc.DotNet.Wpf" mc:Ignorable="d"
+        GlowBrush="{DynamicResource MahApps.Brushes.Accent}"
+        Title="PeersTV плеер разблокированы все каналы - без эротики" TitleAlignment="Center" Icon="peerstv.png" Width="868.767" Height="9770.6" ResizeMode="CanResizeWithGrip">
+    <mah:MetroWindow.LeftWindowCommands>
+        <mah:WindowCommands>
+            <Button Click="LaunchTelegram" ToolTip="Связь с автором">
+                <iconPacks:FontAwesome Width="22" Height="22" Kind="TelegramPlaneBrands" />
+            </Button>
+            <Button Click="DevChannel" ToolTip="Открыть канал разработчика">
+                <iconPacks:FontAwesome Width="22" Height="22" Kind="TelegramPlaneBrands" />
+            </Button>
+        </mah:WindowCommands>
+    </mah:MetroWindow.LeftWindowCommands>
+    <mah:MetroWindow.RightWindowCommands>
+        <mah:WindowCommands>
+            <!--  <Button Click="opensettings" ToolTip="Открыть настройки приложения">
+                <iconPacks:FontAwesome Width="22" Height="22" Kind="UserCogSolid" />
+            </Button>  -->
+        </mah:WindowCommands>
+    </mah:MetroWindow.RightWindowCommands>
+    <Grid x:Name="Grid1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <GridSplitter HorizontalAlignment="Right" VerticalAlignment="Stretch" ResizeBehavior="PreviousAndNext" Width="5" Background="#FFBCBCBC" Margin="0,10,251,-10"/>
+        <vlc:VlcControl x:Name="vlcPlayer" windowsForms1:Grid.ColumnSpan="3" Margin="190,0,0,0" />
+        <ListView HorizontalAlignment="Left" VerticalAlignment="Top" Width="185">
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="kanal12" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/12_kanal.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="hd1music" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/hd1music.png" Height="auto" Width="auto"/>
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="day365" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/365_logo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="nsk49" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/nsk49.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="kanal8" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/8kanal.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="kanal8krasn" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/8kanalkrasn.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="amedia1" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/1379592763_amedia-1.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="amedia2" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/1379593400_amedia-2.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="amediahit" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/amedia-hit.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="amediapremium" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/amediapremiumhd-1024x576.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="animalplanet" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/animalplanet.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="animalplanethd" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/animalplanethd.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="bridgetv" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/bridgetv.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="bridgetvclassic" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/bridgetvclassic.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="bridgetvdeluxe" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/bridjetvdeluxe.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="bridgetvhits" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/bridgetvhits.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="bridgetvrus" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/bridgetvrus.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="cartoonnetwork" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/cartoonnetwork.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="cinema" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/cinemalogo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="davinchi" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/davincilogo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="discoverychannel" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/discoverychannel.jpeg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="discoveryhd" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/Discovery-HD.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="disney" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/disneylogo2.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="docubox" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/docuboxlg.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="dtx" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/DTX_Logo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="euronews" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/Euronews._2016_logo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="eurosport1" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/eurosport1logo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="eurosport1hd" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/eurosport-1-hd-logo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="eurosport2" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/Eurosport_2_Logo.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="eurosport2hd" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/eurosport2hd.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="extremesports" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/extreme_logo2-2.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="fashiontv" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/fashiontvlogo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="filmbox" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/filmbox.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="filmboxart" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/filmboxart.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="fox" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/foxlogo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="foxlife" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/Fox_life_logo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="mtvdance" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/mtvdance.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="mtvlivehd" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/mtvrus.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="mtvrus" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/MTV_HD_(2013).png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="natgeowild" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/natgeowild.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="nationalgeographic" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/nationalgeographic.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="nationalgeographichd" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/Nat_Geo_HD.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="nickjr" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/nickjr.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="nick" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/nicklogo1.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="nickhd" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/nickhdlogo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="rutv" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/Rutv_logo.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="russiatoday" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/russiatoday.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="russiatodaydoc" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/rtdoc.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="rtg" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/RTGlogo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="setsd" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/sonysdlogo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="sonyscifi" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/sonyscifi.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="tiji" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/tiji.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="tlc" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/tlclogo.png" Height="auto" Width="auto" Stretch="UniformToFill" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="tlchd" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/tlchdlogo.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="traveladventure" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/traveladventure.jpg" Height="auto" Width="auto" Stretch="UniformToFill" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="eurokino" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/eurokino.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="tvxxi" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/tvxxi.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="tv1000" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/tv1000.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="tv1000action" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/tv1000_action.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="tv1000ruskino" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/tv1000RusKino.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="mtv80s" Height="120" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/mtv80s.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="viasatexplore" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/viasatexplore.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="viasathistory" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/viasathisotry.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="viasatnature" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/viasatnature.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="viasatsporthd" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/viasatsport.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="tv1000comedy" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/vipcomedy.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="tv1000megahit" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/vipmegahit.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="tv1000premiere" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/vippremiere.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="tv1000serial" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/vipserial.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="zoopark" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/zoopark.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="auto24" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/24.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="autoplus" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/autoplus.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="bash24" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/bashkortostan24.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="boxtv" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/boxtv.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="muzkoi" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/muzhskoy.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="vremya" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/vremya.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="vsyaufa" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/vsyaufa.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="unikum" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/unikum.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="detmir" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/detskiy_mir.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="dialogioribalke" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/dialogi_o_rybalke.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="domkino" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/domkino.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="domasnii" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/domashnii.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="don24" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/don24.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="evpatoriatv" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/evpatoriatv.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="ege" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/egetv.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="jivayaplaneta" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/logo-line.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="jivi" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/jivi1.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="zagorodlive" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/logo-zagorodnaya-zhizn.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="zvezda" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/logo-zvezda.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="yamalregion" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/yamal.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="zootv" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/zoo_tv.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="rusillussion" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/russkiy_illyuzion.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="illussionplus" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/illyuzionplus.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="inndiiskoekino" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/inndiiskoekino.png" Height="auto" Width="auto" Stretch="UniformToFill" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="june" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/june-logo.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="kaleidoscopetv" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/kaleydoskop.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="karusel" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/karusel.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="karusel" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/Kino_24.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="kinocomedy" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/kinocomedyia.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="kinomix" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/kinomix.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="classickino" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/movie_classic.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="controlzakup" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/kontrolzakup.jpg" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="kriktv" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/kriktv.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="krym24" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/crimea24.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="kubal24orbita" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/logo_grey_kuban24.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="kithentv" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/kuhnya-tv.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="khl" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/khl_sd.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="khlhd" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/khl_hd.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="ldprtv" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/ldpr_tv.png" Height="auto" Width="auto" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="lubimoekino" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/lyubimoe_kino.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="laminor" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/la-minor.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="mama" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/mama-kanal-ogo.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="match" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/match.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="matchhd" ToolTip="Матч! HD" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/match.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="matcharena" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/match_arena.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="matcharenahd" ToolTip="Матч! Арена HD" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/match_arena.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="matchboew" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/match_boec.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="matchigra" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/match_igra.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="matchnashsport" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/match_nash_sport.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="matchfootball1" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/match_futbol_1.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="matchfootball2" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/match_futbol_2.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="matchfootball3" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/match_futbol_3.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="mir" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/mir.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="mir24" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/mir_24.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="mirseriala" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/mir_seriala.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="moscow24" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/moskva24.png" />
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Click="myplannet" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="http://cdnfilesproject.sytes.net/peerstv/channels/moya_planeta.png" />
+            </Button>
+        </ListView>
+    </Grid>
+</mah:MetroWindow>
