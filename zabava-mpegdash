@@ -1331,6 +1331,9 @@ https://s91412.cdn.ngenix.net/mdrm/CH_WINK3/variant.m3u8?version=2
 #EXTINF:-1 catchup="append" catchup-days="7" catchup-source="&offset=-${offset}&utcstart=${timestamp}" group-title="Спортивные",Бразильский футбол 4
 #EXTVLCOPT:http-user-agent=WINK/1.28.1 (Android/7.1.2)
 https://s91412.cdn.ngenix.net/mdrm/CH_WINK4/variant.m3u8?version=2
+#EXTINF:-1 catchup="append" catchup-days="7" catchup-source="&offset=-${offset}&utcstart=${timestamp}" group-title="Спортивные",Телеканал NHL ТВ
+#EXTVLCOPT:http-user-agent=WINK/1.28.1 (Android/7.1.2)
+https://s91412.cdn.ngenix.net/mdrm/CH_NHLTVHD/variant.m3u8?version=2
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="&offset=-${offset}&utcstart=${timestamp}" group-title="Спортивные",LIVE 10
 #EXTVLCOPT:http-user-agent=WINK/1.28.1 (Android/7.1.2)
 https://s91412.cdn.ngenix.net/mdrm/CH_NHL6HD/variant.m3u8?version=2
