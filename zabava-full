@@ -933,6 +933,7 @@ https://zabava-htlive.cdn.ngenix.net/hls/CH_ANEKDOTTV/variant.m3u8?version=2
 #EXTVLCOPT:http-user-agent=WINK/1.28.1 (Android/7.1.2)
 https://zabava-htlive.cdn.ngenix.net/hls/CH_GAGSNETWORKHD/variant.m3u8?version=2
 #EXTINF:-1 catchup="append" tvg-logo="http://fe-mos.svc.iptv.rt.ru:8080/images/broadcastChannel1617366291609.png" catchup-days="3" catchup-source="&offset=-${offset}&utcstart=${timestamp}" group-title="Познавательные",Skyleaf EcoTV
+#EXTVLCOPT:http-user-agent=WINK/1.28.1 (Android/7.1.2)
 https://zabava-htlive.cdn.ngenix.net/hls/CH_SKYLEAFECOTV/variant.m3u8?version=2
 #EXTINF:-1 tvg-id="discovery-channel" catchup="append" catchup-days="7" catchup-source="&offset=-${offset}&utcstart=${timestamp}" group-title="Познавательные",Discovery Channel
 #EXTVLCOPT:http-user-agent=WINK/1.28.1 (Android/7.1.2)
@@ -1142,6 +1143,7 @@ https://zabava-htlive.cdn.ngenix.net/hls/CH_OHOTAIRYBALKS/variant.m3u8?version=2
 #EXTVLCOPT:http-user-agent=WINK/1.28.1 (Android/7.1.2)
 https://zabava-htlive.cdn.ngenix.net/hls/CH_RATNIKHD/variant.m3u8?version=2
 #EXTINF:-1 catchup="append" tvg-logo="http://fe-mos.svc.iptv.rt.ru:8080/images/broadcastChannel1617371212784.png" catchup-days="3" catchup-source="&offset=-${offset}&utcstart=${timestamp}" group-title="Женские",Fashion&LifeStyle
+#EXTVLCOPT:http-user-agent=WINK/1.28.1 (Android/7.1.2)
 https://zabava-htlive.cdn.ngenix.net/hls/CH_FASHIONLIFESTYLEHD/variant.m3u8?version=2
 #EXTINF:-1 tvg-id="domashny" catchup="append" catchup-days="7" catchup-source="&offset=-${offset}&utcstart=${timestamp}" group-title="Женские",Домашний
 #EXTVLCOPT:http-user-agent=WINK/1.28.1 (Android/7.1.2)
