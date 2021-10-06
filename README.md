@@ -1,6 +1,5 @@
 # PeersTV для Windows
-# СКАЧАТЬ ПЛЕЕР 👇
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)][release]
+# СКАЧАТЬ ПЛЕЕР [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)][release]
 
 Данный плеер предназначен для просмотра IPTV каналов на базе Windows из основного:
 - Открыты все каналы;
